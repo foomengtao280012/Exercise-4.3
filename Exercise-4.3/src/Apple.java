@@ -1,13 +1,11 @@
 
 public class Apple extends Fruit{
-	protected int quantity;
-	public Apple(String name, int quantity) {
-		super (name);
-		this.quantity = quantity;
+	public Apple(String name, double price) {
+		super (name, price);
 	  }
 	
 	public String toString() {
 		return "\nName\t\t: " + this.name + 
-				"\nQuantity\t: "+ this.quantity;
+				"\nUnit Price\t: RM " +  totalPrice();
 	}
 }

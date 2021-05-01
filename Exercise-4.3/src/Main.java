@@ -2,15 +2,15 @@
 public class Main {
 
 	public static void main(String[] args) {
-		Apple a = new Apple("Apple", 3);
+		Apple a = new Apple("Apple", 1.2);
 		System.out.println(a);
 		System.out.println();
 	    
-		RedApple b = new RedApple("Red Apple", 4, "Red", "Sweet", 1.4);
+		RedApple b = new RedApple("Red Apple", "Red", "Sweet", 4, 1.4);
 		System.out.println(b);
 		System.out.println();
 	    
-		GreenApple c = new GreenApple("Green Apple", 5, "Green", "Sour", 1.2);
+		GreenApple c = new GreenApple("Green Apple", "Green", "Sour", 5, 1.2);
 		System.out.println(c);
 		System.out.println();
 	    
