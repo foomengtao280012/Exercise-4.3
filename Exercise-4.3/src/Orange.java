@@ -9,6 +9,10 @@ public class Orange extends Fruit{
 		this.quantity = quantity;
 	  }
 	
+	public void vitamin() {
+		System.out.println("Oranges contains vitamin A,B and C!");
+	}
+	
 	public double totalPrice(int quantity) {
 		return price * quantity;
 	}
