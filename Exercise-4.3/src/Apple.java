@@ -21,14 +21,15 @@ public class Apple extends Fruit{
 		return quantity * price;
 	}
 
-	public void vitamin() {
-		System.out.println("Apples contains vitamin A and C!");
+	public String vitamin() {
+		return "\nApples contains vitamin A and C!";
 	}
 	
 	public String toString() {
 		return "\nName\t\t: " + this.name + 
 				"\nQuantity\t: RM " + this.quantity +
 				"\nUnit Price\t: RM " + this.price +
-				"\nTotal Price\t: RM "+  totalPrice();
+				"\nTotal Price\t: RM "+  totalPrice() +
+				vitamin();
 	}
 }

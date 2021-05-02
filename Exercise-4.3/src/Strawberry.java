@@ -12,8 +12,8 @@ public class Strawberry extends Fruit{
 		this.price = price;
 	}
 	
-	public void vitamin() {
-		System.out.println("Strawberries contains vitamin C!");
+	public String vitamin() {
+		return "\nStrawberries contains vitamin C!";
 	}
 	
 	public double totalPrice(int quantity, double weight) {
@@ -27,6 +27,7 @@ public class Strawberry extends Fruit{
 				"\nNumber of box\t: "+ this.quantity + 
 				"\nWeight\t\t: "+ this.weight + "kg" +
 				"\nPrice per kg\t: RM " + this.price +
-				"\nTotal Price\t: RM " + totalPrice(quantity, weight);
+				"\nTotal Price\t: RM " + totalPrice(quantity, weight)+
+				vitamin();
 	}
 }

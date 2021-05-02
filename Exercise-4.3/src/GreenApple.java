@@ -15,7 +15,8 @@ public class GreenApple extends Apple {
 				"\nTaste\t\t: " + this.taste + 
 				"\nQuantity\t: "+ this.quantity +
 				"\nUnit Price\t: RM " + this.price +
-				"\nTotal Price\t: RM " + totalPrice(quantity);
+				"\nTotal Price\t: RM " + totalPrice(quantity)+
+				vitamin();
 	}
 }
 

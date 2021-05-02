@@ -11,8 +11,8 @@ public class Orange extends Fruit{
 		this.price = price;
 	  }
 	
-	public void vitamin() {
-		System.out.println("Oranges contains vitamin A,B and C!");
+	public String vitamin() {
+		return "\nOranges contains vitamin A,B and C!";
 	}
 	
 	public double totalPrice(int quantity) {
@@ -25,6 +25,7 @@ public class Orange extends Fruit{
 				"\nTaste\t\t: " + this.taste + 
 				"\nQuantity\t: "+ this.quantity +
 				"\nUnit Price\t: RM " + this.price +
-				"\nTotal Price\t: RM " + totalPrice(quantity);
+				"\nTotal Price\t: RM " + totalPrice(quantity)+
+				vitamin();
 	}
 }
