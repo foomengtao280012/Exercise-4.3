@@ -2,9 +2,9 @@
 public class Strawberry extends Fruit{
 	private String colour, taste;
 	private int quantity; 
-	private double weight;
+	private double weight, price;
 	public Strawberry(String name, String colour, String taste, int quantity, double weight, double price) {
-		super (name, price);
+		super (name);
 		this.colour = colour;
 		this.taste = taste;
 		this.quantity = quantity;
@@ -17,7 +17,7 @@ public class Strawberry extends Fruit{
 	}
 	
 	public double totalPrice(int quantity, double weight) {
-		return price * quantity * weight;
+		return quantity * weight * price;
 	}
 	
 	public String toString() {

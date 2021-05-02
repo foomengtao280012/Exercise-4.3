@@ -2,11 +2,13 @@
 public class Orange extends Fruit{
 	private String colour, taste;
 	private int quantity; 
+	private double price;
 	public Orange(String name, String colour, String taste, int quantity, double price) {
-		super (name, price);
+		super (name);
 		this.colour = colour;
 		this.taste = taste;
 		this.quantity = quantity;
+		this.price = price;
 	  }
 	
 	public void vitamin() {
@@ -14,7 +16,7 @@ public class Orange extends Fruit{
 	}
 	
 	public double totalPrice(int quantity) {
-		return price * quantity;
+		return quantity * price;
 	}
 	
 	public String toString() {

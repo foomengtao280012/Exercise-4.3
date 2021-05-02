@@ -1,18 +1,12 @@
 
 public class GreenApple extends Apple {
 	private String colour, taste;
-	private int quantity; 
-	private double price;
 	public GreenApple(String name, String colour, String taste, int quantity, double price) {
-		super (name, price);
+		super (name, quantity, price);
 		this.colour = colour;
 		this.taste = taste;
 		this.quantity = quantity;
 		this.price = price;
-	}
-	
-	public double totalPrice(int quantity) {
-		return price * quantity;
 	}
 	
 	public String toString() {

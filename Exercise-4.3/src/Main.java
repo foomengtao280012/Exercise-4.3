@@ -2,11 +2,11 @@
 public class Main {
 
 	public static void main(String[] args) {
-		Fruit f = new Fruit("Fruit", 1.0);
+		Fruit f = new Fruit("Fruit");
 		f.vitamin();
 		System.out.println();
 		
-		Apple a = new Apple("Apple", 1.2);
+		Apple a = new Apple("Apple", 2, 1.2);
 		System.out.println(a);
 		a.vitamin();
 		System.out.println();
@@ -16,7 +16,7 @@ public class Main {
 		b.vitamin();
 		System.out.println();
 	    
-		GreenApple c = new GreenApple("Green Apple", "Green", "Sour", 5, 1.2);
+		GreenApple c = new GreenApple("Green Apple", "Green", "Sour", 5, 1.3);
 		System.out.println(c);
 		c.vitamin();
 		System.out.println();
@@ -26,7 +26,7 @@ public class Main {
 		d.vitamin();
 		System.out.println();
 	    
-		Strawberry e = new Strawberry("Strawberry", "Red", "Sweet", 3, 0.8, 5);
+		Strawberry e = new Strawberry("Strawberry", "Red", "Sweet", 4, 0.8, 5);
 		System.out.println(e);
 		e.vitamin();
 		System.out.println();
